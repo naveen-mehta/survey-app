@@ -1,7 +1,8 @@
 import React from 'react'
 import 'survey-react/survey.css'
 import * as Survey from 'survey-react'
-import { surveyOneQuestions } from '../questions/surveyOneQuestions.js'
+import { surveyOneQuestions } from '../Questions/SurveyOneQuestions.js'
+import { SurveyListWrapper } from './SurveyElements.js'
 
 const SurveyOne = () => {
     let survey = new Survey.Model(surveyOneQuestions);
@@ -13,9 +14,13 @@ const SurveyOne = () => {
     });
 
     return (
-        <Survey.Survey 
-            model={survey}
-        />
+        <>
+            <SurveyListWrapper>
+                <Survey.Survey 
+                    model={survey}
+                />
+            </SurveyListWrapper>
+        </>
     )
 }
 

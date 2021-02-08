@@ -1,12 +1,12 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import Login from './pages/Login'
+import SurveyApp from './pages/index';
 import './App.css';
 
 function App() {
   return (
     <Router >
       <Switch>
-        <Route exact path='/' component={Login}/>
+        <Route exact path='/' component={SurveyApp}/>
       </Switch>
     </Router>
   );
@@ -14,6 +14,3 @@ function App() {
 
 export default App;
 
-
-//<Route path='/admin/surveylist' component={SurveyList} />
-//<Route path='/admin/surveydetails' component={SurveyDetails} />
