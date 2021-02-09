@@ -33,7 +33,7 @@ const LoginForm = () => {
                     <LoginFormWrapper>
                         <LoginDetailsContainer>
                             <LoginSubHeading>
-                                Login below
+                                Click below to complete a survey
                             </LoginSubHeading>
                             <AdminBtn
                                 onClick={() => setUser('admin')}
@@ -41,11 +41,7 @@ const LoginForm = () => {
                                 Admin login
                             </AdminBtn>
                             <LoginDesc>
-                                Admins have access to available surveys and reports
-                            </LoginDesc>
-                            <ClientBtn>Client login</ClientBtn>
-                            <LoginDesc>
-                                Use client login to complete a survey
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nihil libero reprehenderit inventore totam nostrum ex sapiente minus blanditiis illo, quas dolore quos corrupti voluptate quod excepturi! In, debitis porro.
                             </LoginDesc>
                         </LoginDetailsContainer>
                     </LoginFormWrapper>
