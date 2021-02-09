@@ -15,9 +15,9 @@ const SurveyDetails = () => {
 
     return (
         <>
-            {activeSurvey === 1 ? getSurvey() : ''};
+            {activeSurvey === 1 ? getSurvey() : ''}
         </>
     )
-};
+}
 
-export default SurveyDetails;
+export default SurveyDetails

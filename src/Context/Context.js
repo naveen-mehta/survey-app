@@ -1,5 +1,4 @@
 import React, { createContext, useEffect, useState } from 'react';
-import { Redirect } from 'react-router-dom';
 
 export const Context = createContext();
 

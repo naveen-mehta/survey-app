@@ -26,7 +26,7 @@ const LoginForm = () => {
                                 Survey App
                             </LoginHeading>
                             <LoginDesc>
-                                Designed & Built by Naveen Mehta
+                                ©Designed & Built by Naveen Mehta
                             </LoginDesc>
                         </LoginIntroContainer>
                     </LoginIntroWrapper>
@@ -38,7 +38,7 @@ const LoginForm = () => {
                             <AdminBtn
                                 onClick={() => setUser('admin')}
                             >
-                                Admin login
+                                Take a survey
                             </AdminBtn>
                             <LoginDesc>
                                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem nihil libero reprehenderit inventore totam nostrum ex sapiente minus blanditiis illo, quas dolore quos corrupti voluptate quod excepturi! In, debitis porro.

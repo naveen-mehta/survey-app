@@ -9,7 +9,7 @@ function App() {
         <Route exact path='/' component={SurveyApp}/>
       </Switch>
     </Router>
-  );
+  )
 }
 
 export default App;

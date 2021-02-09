@@ -6,7 +6,7 @@ const Login = () => {
         <>
             <LoginForm />            
         </>
-    );
+    )
 }
 
-export default Login;
+export default Login

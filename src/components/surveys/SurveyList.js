@@ -21,6 +21,8 @@ const List = () => {
                     </SurveyHeading>
                     <SurveyText>
                         Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste perspiciatis vel beatae qui, asperiores praesentium dolorem natus atque optio voluptate commodi ullam eaque distinctio? Quae, corrupti veniam. Suscipit, et sint!
+                        <br/><br/>
+                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat illum mollitia architecto dolores? Minima dignissimos esse ipsa ad culpa, adipisci expedita, tempore, temporibus corporis nostrum error dolorum odit iusto aliquam?
                     </SurveyText>
                     <BeginSurvey
                         onClick={() => {

@@ -13,4 +13,4 @@ const SurveyApp = () => {
     )
 }
 
-export default SurveyApp;
+export default SurveyApp

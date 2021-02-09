@@ -7,7 +7,7 @@ import {
 import { Context } from '../../Context/Context'
 
 const Header = () => {
-    const { user, setUser } = useContext(Context);
+    const { user, setUser, setActiveSurvey, setListActive } = useContext(Context);
 
     const getHeader = () => {
         return (
@@ -17,9 +17,13 @@ const Header = () => {
                         Survey App
                     </LogoText>
                     <LogoutBtn 
-                        onClick={() => setUser('')}
+                        onClick={() => {
+                            setUser('');
+                            setActiveSurvey(0);
+                            setListActive('true');
+                        }}
                     >
-                        Logout
+                        Reset
                     </LogoutBtn>
                 </HeaderContainer>
             </>

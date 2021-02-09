@@ -2,9 +2,13 @@ import React from 'react'
 import 'survey-react/survey.css'
 import * as Survey from 'survey-react'
 import { surveyOneQuestions } from '../Questions/SurveyOneQuestions.js'
-import { SurveyListWrapper } from './SurveyElements.js'
+import { SurveyDetailsWrapper } from './SurveyElements.js'
 
 const SurveyOne = () => {
+    Survey
+    .StylesManager
+    .applyTheme("orange");
+    
     let survey = new Survey.Model(surveyOneQuestions);
 
     survey
@@ -15,11 +19,11 @@ const SurveyOne = () => {
 
     return (
         <>
-            <SurveyListWrapper>
+            <SurveyDetailsWrapper>
                 <Survey.Survey 
                     model={survey}
                 />
-            </SurveyListWrapper>
+            </SurveyDetailsWrapper>
         </>
     )
 }
