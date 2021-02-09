@@ -2,7 +2,8 @@ import React, { useContext } from 'react';
 import {
     SurveyListWrapper,
     SurveyText,
-    SurveyHeading
+    SurveyHeading,
+    BeginSurvey
 } from './SurveyElements';
 import { Context } from '../../Context/Context';
 import { Redirect } from 'react-router-dom';
@@ -16,17 +17,20 @@ const List = () => {
             <>
                 <SurveyListWrapper>
                     <SurveyHeading>
-                        Click below to complete a survey
+                        Product / Market Fit Survey
                     </SurveyHeading>
-                    <SurveyText 
+                    <SurveyText>
+                        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste perspiciatis vel beatae qui, asperiores praesentium dolorem natus atque optio voluptate commodi ullam eaque distinctio? Quae, corrupti veniam. Suscipit, et sint!
+                    </SurveyText>
+                    <BeginSurvey
                         onClick={() => {
                             setListActive('false');
                             setActiveSurvey(1);
                             <Redirect to='admin/surveydetails' />
                         }}
                     >
-                        Product Marketing Fit Survey
-                    </SurveyText>
+                        Begin Survey    
+                    </BeginSurvey>
                 </SurveyListWrapper>
             </>
         )
