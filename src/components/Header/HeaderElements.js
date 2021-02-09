@@ -14,7 +14,6 @@ export const LogoText = styled.h1`
     display: inline-flex;
     align-self: right;
     color: #61391c;
-    font-family: Arial, Helvetica, sans-serif;
 `
 
 export const LogoutBtn = styled.button`
