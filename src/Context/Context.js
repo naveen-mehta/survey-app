@@ -47,7 +47,3 @@ export const Provider = ({ children }) => {
         </Context.Provider>
     );
 };
-
-// else if (user === 'admin') {
-    // window.history.replaceState(null, 'surveylist', 'admin/surveylist')
-// }

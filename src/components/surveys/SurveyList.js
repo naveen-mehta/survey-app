@@ -8,7 +8,6 @@ import {
 import { Context } from '../../Context/Context';
 import { Redirect } from 'react-router-dom';
 
-
 const List = () => {
     const { user, listActive, setListActive, setActiveSurvey } = useContext(Context)
     
