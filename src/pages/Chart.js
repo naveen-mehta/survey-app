@@ -41,7 +41,7 @@ const Chart = () => {
     dataSource: {
         "chart": {
           "caption": "Customer Satisfaction Score",
-          "subcaption": "Last week",
+          "subcaption": "This information is populated based on the response from Question 10 in this survey",
           "lowerLimit": "0",
           "upperLimit": "10",
           "theme": "fusion"
