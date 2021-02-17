@@ -7,6 +7,7 @@ export const Provider = ({ children }) => {
     const [user, setUser] = useState('');
     const [listActive, setListActive] = useState('true');
     const [activeSurvey, setActiveSurvey] = useState(0);
+    const [surveyResults, setSurveyResults] = useState('');
 
     useEffect(() => {
         let session = localStorage.getItem('session');
@@ -32,6 +33,12 @@ export const Provider = ({ children }) => {
         }
     }, [activeSurvey]);
 
+    useEffect(() => {
+        if (surveyResults) {
+            setActiveSurvey(0)
+        } 
+    }, [surveyResults]);
+
     return (
         <Context.Provider 
             value={{
@@ -40,7 +47,9 @@ export const Provider = ({ children }) => {
                 listActive,
                 setListActive,
                 activeSurvey,
-                setActiveSurvey    
+                setActiveSurvey,
+                setSurveyResults,
+                surveyResults,    
             }}
         >
             {children}

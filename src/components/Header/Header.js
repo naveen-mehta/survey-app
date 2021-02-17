@@ -7,7 +7,7 @@ import {
 import { Context } from '../../Context/Context'
 
 const Header = () => {
-    const { user, setUser, setActiveSurvey, setListActive } = useContext(Context);
+    const { user, setUser, setActiveSurvey, setListActive, setSurveyResults } = useContext(Context);
 
     const getHeader = () => {
         return (
@@ -21,6 +21,7 @@ const Header = () => {
                             setUser('');
                             setActiveSurvey(0);
                             setListActive('true');
+                            setSurveyResults('');
                         }}
                     >
                         Reset

@@ -3,3 +3,10 @@
 * {
     font-family: 'Sniglet', cursive;    
 }
+
+.chart {
+    margin: 20% auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
